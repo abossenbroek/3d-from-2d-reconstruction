@@ -18,10 +18,6 @@ repos:
     - id: nbqa-pyupgrade
       args: ["--py37-plus"]
       types: [jupyter]
-    - id: nbqa-isort
-      args: ["--float-to-top", "--filter-files", "--profile=black", "--nbqa-mutate"]
-      types: [jupyter]
-      additional_dependencies: [ isort==5.11.4 ]
  - repo: https://github.com/kynan/nbstripout
    rev: 0.4.0
    hooks:
